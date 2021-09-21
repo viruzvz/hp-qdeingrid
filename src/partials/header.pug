@@ -1,0 +1,68 @@
+header
+  nav.nav-social(role="social contacts")
+    .container-fluid
+      .row
+        .col-lg-6
+          figure.d-inline
+            i.fas.fa-phone.c-primary &nbsp;
+            figcaption.d-inline
+              span.c-primary.milli Informações de contato +55 61 9841-9696
+        .col-lg-6.text-end
+          .nav-social--links.text-end
+            a.link.link-facebook(href="#" title='Facebook APCN')
+              i.fab.fa-facebook-f
+            a.link.link-youtube(href="#" title='Youtube APCN')
+              i.fab.fa-youtube
+            a.link.link-instagram(href="#" title='Instagram APCN')
+              i.fab.fa-instagram
+            a.link.link-whatsapp(href="#" title='Whatsapp APCN')
+              i.fab.fa-whatsapp
+
+  nav.nav-brand(role="Logo")
+    .container-fluid 
+      .row
+        .col-lg-3
+        .col-lg-6.text-center
+          img(src="images/logo.svg", alt="Logo QdeIngrid", width="300px")
+          p.brand-caption
+        .col-lg-3.d-flex.align-items-center
+          .navbar-expand-lg.w-100
+            #collapseSearch.collapse.navbar-collapse
+              form.w-100(action="")
+                .input-group.search
+                  input.form-control(type='text' placeholder='Buscar')
+                  .input-group-append.search-append
+                    i.fas.fa-search.c-cut
+
+  nav.navbar.navbar-expand-lg(role="Nav principal")
+    .container-fluid
+      button.navbar-toggle.collapsed.x(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#collapseSearch' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle search')
+        i.fas.fa-search.c-primary
+      .w-100
+        .row
+          .col-lg-3
+          .col-lg-6
+            #navbarNav.collapse.navbar-collapse
+              .d-flex.justify-content-center.w-100
+                ul.navbar-nav
+                  li.nav-item
+                    a.nav-link.active.link-nav(aria-current='page' href='#') Home
+                  li.nav-item
+                    a.nav-link.link-nav(href='#') Loja
+                  li.nav-item
+                    a.nav-link.link-nav(href='#') Quem Somos
+                  li.nav-item
+                    a.nav-link.link-nav(href='#') Carrinho de compras
+                  li.nav-item
+                    a.nav-link.link-nav(href='#') Finalizar pedido
+          .col-lg-3
+            .d-flex.justify-content-end.w-100
+              ul.navbar-nav
+                li.nav-item
+                  a.nav-link.link-nav(href='#') R$ Card
+
+

@@ -1,0 +1,16 @@
+.title-primary {
+  background-color: $primary;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: $white;
+  font-size: 16px;
+}
+.title-artigo {
+  color: $primary;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  @include media-breakpoint-up(lg) {
+    border-bottom: 1px solid #ccc;
+  }
+}
