@@ -13163,7 +13163,13 @@ img {
 }
 .h1,
 h1 {
-    font-size: 72px;
+    font-size: 24px;
+}
+@media (min-width: 1200px) {
+    .h1,
+    h1 {
+        font-size: 72px;
+    }
 }
 .h1,
 .h2,
@@ -13174,37 +13180,8 @@ h3 {
     margin-bottom: 0;
     font-family: dutch801_rm_btbold_italic;
 }
-.artigos,
 .spacer-lg {
     margin-bottom: 30px;
-}
-.artigos {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
-}
-.content-vz {
-    background-color: #fff;
-    max-width: 1350px;
-    padding-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -60px;
-}
-@media (max-width: 1399.98px) {
-    .content-vz {
-        max-width: 1180px;
-    }
-}
-@media (max-width: 1199.98px) {
-    .content-vz {
-        max-width: 1000px;
-    }
-}
-@media (max-width: 991.98px) {
-    .content-vz {
-        max-width: 100%;
-        margin-top: -30px;
-    }
 }
 .bg-primary {
     background-color: #a19892 !important;
@@ -13494,7 +13471,7 @@ h3 {
 .link-card .caption-card:hover {
     background-color: rgba(10, 45, 61, 0);
 }
-.active {
+.navbar .active {
     font-weight: 700;
     border-bottom: 4px solid #bcbfc4;
     color: #fff;
@@ -13503,16 +13480,29 @@ h3 {
     position: relative;
 }
 .carousel-wp .carousel-inner .caption {
-    position: absolute;
-    top: 80px;
-    left: 155px;
+    padding: 5px;
 }
 .carousel-wp .carousel-inner .caption p {
-    font-family: chopinscriptmedium;
-    font-size: 3rem;
-    text-align: end;
+    font-size: 1rem;
     font-weight: 100;
     color: #7f7773;
+}
+@media (min-width: 1200px) {
+    .carousel-wp .carousel-inner .caption {
+        position: absolute;
+        top: 20px;
+        left: 155px;
+    }
+    .carousel-wp .carousel-inner .caption p {
+        font-size: 3rem;
+        font-family: chopinscriptmedium;
+    }
+}
+@media (max-width: 1199.98px) {
+    .carousel-wp .carousel-control-next,
+    .carousel-wp .carousel-control-prev {
+        display: none;
+    }
 }
 .title-primary {
     background-color: #a19892;
