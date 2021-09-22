@@ -70,8 +70,10 @@
   }
 }
 
-.active {
-  font-weight: bold;
-  border-bottom: 4px solid $secondary;
-  color: #fff;
+.navbar {
+  .active {
+    font-weight: bold;
+    border-bottom: 4px solid $secondary;
+    color: #fff;
+  }
 }

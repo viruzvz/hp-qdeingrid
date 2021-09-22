@@ -2,16 +2,27 @@
   .carousel-inner {
     position: relative;
     .caption {
-      position: absolute;
-      top: 80px;
-      left: 155px;
+      padding: 5px;
       p {
-        font-family: "chopinscriptmedium";
-        font-size: 3rem;
-        text-align: end;
+        font-size: 1rem;
         font-weight: 100;
         color: $cousin;
       }
+      @include media-breakpoint-up(xl) {
+        position: absolute;
+        top: 20px;
+        left: 155px;
+        p {
+          font-size: 3rem;
+          font-family: "chopinscriptmedium";
+        }
+      }
+    }
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    @include media-breakpoint-down(xl) {
+      display: none;
     }
   }
 }
