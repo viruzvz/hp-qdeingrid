@@ -1,14 +1,20 @@
 section
-  #carouselExampleControls.carousel.slide(data-bs-ride='carousel')
+  #carouselWP.carousel.slide.carousel-wp(data-bs-ride='carousel')
     .carousel-inner
       .carousel-item.active
-        img.d-block.w-100(src='images/slider1.jpg' alt='Slider1')
+        img.img-fluid.w-100(src='images/slider1.jpg' alt='Slider1')
+        .caption
+          h1.c-tertiary Perfume de ambiente
+          p Para sua casa
       .carousel-item
-        img.d-block.w-100(src='images/slider2.jpg' alt='Slider2')
-    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='prev')
+        img.img-fluid.w-100(src='images/slider2.jpg' alt='Slider2')
+        .caption
+          h1.c-tertiary Lorem ipsum dolor sit amet, 
+          p o melhor
+    button.carousel-control-prev(type='button' data-bs-target='#carouselWP' data-bs-slide='prev')
       span.carousel-control-prev-icon(aria-hidden='true')
       span.visually-hidden Previous
-    button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='next')
+    button.carousel-control-next(type='button' data-bs-target='#carouselWP' data-bs-slide='next')
       span.carousel-control-next-icon(aria-hidden='true')
       span.visually-hidden Next
 
